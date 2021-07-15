@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue 3 tutorial</title>
+    <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+    <div id="vue-app">
+        {{title}}
+    </div>
+    
+    <script>
+        //console.log(Vue);
+        //console.log( Vue.createApp() );
+        const app = Vue.createApp({
+            data(){
+                return {
+                    title: "Vue3 Tutorial Updated",
+                };
+            },
+            /* template: `<div> //removed because if the template exists here the data won't be visible
+                           <h1>
+                                Hi 
+                            </h1>
+                        </div>`, */
+        });
+        app.mount("#vue-app");
+    </script>
+</body>
+</html>
