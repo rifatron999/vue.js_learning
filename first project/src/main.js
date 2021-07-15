@@ -9,8 +9,8 @@ const data = function data() {
         title: "Simpifying main.js",
         name: "rifat",
     }
-}
+};
 
-Vue.createApp({
-    data , template
-}).mount("#vue-app");
+const app = {data , template};
+
+Vue.createApp(app).mount("#vue-app");
