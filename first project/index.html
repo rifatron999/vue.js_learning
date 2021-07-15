@@ -20,11 +20,12 @@
                     title: "Vue3 Tutorial Updated",
                 };
             },
-            /* template: `<div> //removed because if the template exists here the data won't be visible
+            template: `<div> 
                            <h1>
                                 Hi 
                             </h1>
-                        </div>`, */
+                            <p> {{title}} </p>
+                        </div>`,
         });
         app.mount("#vue-app");
     </script>
